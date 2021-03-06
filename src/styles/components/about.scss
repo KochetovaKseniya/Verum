@@ -1,0 +1,41 @@
+#about {
+    background-color: white;
+    position: relative;
+
+    height: 659px;
+
+    .container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+    .content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        color: black;
+
+        padding-left: 160px;
+        padding-top: 80px;
+    }
+
+    .content-title {
+        color: black;
+
+        // position: relative;
+
+        // &:before {
+        //     content:'';
+        //     display: block;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;       
+        //     width: 5px;
+        //     height: 63px;
+        //     background-color: #FCAD15;
+        // }
+    }
+}
