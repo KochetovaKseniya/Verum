@@ -30,31 +30,18 @@ a:visited, a:active {
 
     position: relative;
 
-        &:before {
-            content:'';
-            display: block;
-            top: -10px;
-            left: 0;
-            right: 0;
-            bottom: 0;       
-            width: 5px;
-            height: 63px;
-            background-color: #FCAD15;
-        }
+    &:before {
+        content:'';
+        display: block;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: 0;       
+        width: 5px;
+        height: 63px;
+        background-color: #FCAD15;
+    }
 }
-
-// .container {
-//     max-width: 1108px;
-//     margin: 0 auto;
-    
-//     height: 100%;    
-// }
-// .wrapper {
-    // width: 100%;
-    // max-width: 1108px;
-    // margin: 0 auto;
-    // overflow: hidden;
-// }
 
 .btn {
     background-color: #FCAD15;
