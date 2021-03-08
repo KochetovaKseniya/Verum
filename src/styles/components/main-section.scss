@@ -12,7 +12,10 @@
         // position: absolute;
         position: relative;
         z-index: 1;
-    
+
+        max-width: unset;
+        margin: 0 auto;
+
         &:before {
             content: '';
             position: absolute;
@@ -48,10 +51,11 @@
         width: 100%;
         max-width: 1108px;
         margin: 0 auto;
-        padding-top: 200px;
+        padding: 20px;
+        padding-top: 250px;
         padding-bottom: 230px;
     }
-    .title {
+    .title-main {
         font-size: 58px;
         font-weight: 400;
         line-height: 67px;
@@ -72,5 +76,28 @@
         width: 302px;
         height: 80px;
         font-size: 23px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        .title-main {
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 52px;
+            max-width: 80%;
+
+            margin-bottom: 50px;
+        }
+        .button .btn{
+            width: 250px;
+            height: 70px;
+            font-size: 23px;
+        }
+        .subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            width: 70%;
+        } 
+
     }
 }

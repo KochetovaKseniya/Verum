@@ -2,8 +2,6 @@
     background-color: white;
     position: relative;
 
-    height: 659px;
-
     .container {
         height: 100%;
         width: 100%;
@@ -12,30 +10,73 @@
     }
     .content {
         display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
         color: black;
 
         padding-left: 160px;
         padding-top: 80px;
+        padding-bottom: 180px;
+
+        .content--left {
+            display: block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                top: 30px;
+                left: 80px;
+                right: 0;
+                bottom: 0;
+                // width: 421px;
+                max-height: 432px;
+                background-color: #FCAD15;
+                z-index: -1;
+            }
+
+            .image {
+                position: relative;
+                margin-right: 180px;
+                max-width: 387px;
+                max-height: 548px;
+                z-index: 1;
+            }
+        }
+    }
+    .content-title {
+        margin-bottom: 90px;
+    }
+    .text {
+        max-width: 600px;
+
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        padding-bottom: 20px;
+        color: black;
+    }
+    .title {
+        &:after {
+            content: 'О бюро';
+        }
     }
 
-    .content-title {
-        color: black;
+    
+    @media only screen and (max-width: 868px) {
+        .content {
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
 
-        // position: relative;
+            padding-left: 20px;
+            padding-top: 60px;
+            padding-bottom: 100px;
 
-        // &:before {
-        //     content:'';
-        //     display: block;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;       
-        //     width: 5px;
-        //     height: 63px;
-        //     background-color: #FCAD15;
-        // }
+            .content--left {
+                margin-top: 50px;
+            }
+        }
     }
 }
